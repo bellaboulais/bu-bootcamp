@@ -7,22 +7,21 @@ import org.junit.jupiter.api.BeforeEach;
  
 public class ContactTest { 
 
-  private Contact contactAda;
-  private Contact contactAlan;
+  private Contact contact;
 
   @BeforeEach
   void setUp() {
-    contactAda = new Contact("Ada Lovelace", "+1 617 555 0101");
+    contact = new Contact("Ada Lovelace", "+1 617 555 0101");
   }
  
   @Test 
   void constructor_setsNameCorrectly() { 
-    assertEquals("Ada Lovelace", contactAda.getName());
+    assertEquals("Ada Lovelace", contact.getName());
   } 
  
   @Test
   void constructor_setsPhoneCorrectly() { 
-    assertEquals("+1 617 555 0101", contactAda.getPhone());
+    assertEquals("+1 617 555 0101", contact.getPhone());
   } 
  
   @Test
