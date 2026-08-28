@@ -15,13 +15,13 @@ public class ContactManager {
  
         // Step 5: look up a contact 
         Contact contact1 = contacts.get("Bill Nye");
+        Contact contact2 = contacts.get("Jo March");
         if (contact1 == null) {
             System.out.println("Contact not found.");
         }
         else {
             System.out.println("Contact found: " + contact1);
         }
-        Contact contact2 = contacts.get("Jo March");
         if (contact2 == null) {
             System.out.println("Contact not found.");
         }
